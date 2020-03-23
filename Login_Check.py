@@ -1,10 +1,9 @@
 max_login_input_retries = 2
 retries = 0
 
-
 login_list = ['amana', 'gonama', 'kanhs', 'tavcd']
  
-user_login = str(input("Please enter your login"))
+user_login = input("Please enter your login")
 
  
 while (not(user_login in login_list or retries >= max_login_input_retries)):
