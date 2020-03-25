@@ -1,0 +1,9 @@
+email_1 = input ("Please enter your 1st email")
+email_2 = input ("Plase enter your 2nd email")
+email_3 = input ("Please enter your 3rd email")
+follow_ups = int(input("Please enter the number of follow ups"))
+
+if follow_ups < 2 or follow_ups > 5:
+  print ("We suggest you keep it between 2 and 5 days!")
+else: 
+  print ("Awesome! You are ready to send your emails :)")
