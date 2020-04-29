@@ -11,8 +11,8 @@
     <h1>Create Your Personalized Emails</h1>
         <p> Now it's time for you to create the email sequences to send to your prospects.You only have one chance to make a good first impression, which is why we suggest that your content is short and precise. Good luck!</p>
 
-  <form action="/action_page.php">
-  <label for="EmailList"> Recepient: </label> <br>
+  <form name="EmailCreation" action="/action_page.php" onsubmit="sendfunction()">
+  <label for="EmailList"> Recepient:</label> <br>
   <input list="EmailList" name="EmailList">
   <datalist id="EmailList">
     <option value="anna.m@gmail.com">
@@ -20,8 +20,10 @@
     <option value="t.smith@gmail.com">
     <option value="h.brown@gmail.com">
   </datalist><br><br>
-  <label for="subject"> Subject: </label><br>
-  <input type="text" id="subject" name="subject"><br><br>
+  <label for="subject" id= "subject"> Subject: </label><br>
+  <input type="text" id="subject" name="subject" required> <br><br>
+  <button type="button" onclick="SubjectCharacters(document.EmailCreation.subject,40,50)"> Check subject recommendations </button><br> <br> 
+
   <label for="mytext1"> Email Content: </label> <br> 
 <textarea id="w3mission" rows="4" cols="50"> </textarea><br><br>
   <input type="submit" value="Send">
