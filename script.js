@@ -5,11 +5,11 @@ var mxlen = maxlength;
 
 if(field.length <mnlen || field> mxlen.length)
 { 
-console.log("We suggest that you keep your subject between " +mnlen+ " and " +mxlen+ " characters");
+alert("We suggest that you keep your subject between " +mnlen+ " and " +mxlen+ " characters");
 }
 else
 { 
-console.log('Your subject line looks great!');
+alert('Your subject line looks great!');
 return true;
 }
 }
