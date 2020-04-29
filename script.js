@@ -1,10 +1,10 @@
 function SubjectCharacters (inputtxt, minlength, maxlength) {
-var field = inputtxt.length;
+var field = inputtxt;
 document.getElementById("subject").innerHTML = field; 
 var mnlen = minlength;
 var mxlen = maxlength;
 
-if(field<mnlen || field> mxlen)
+if(field.length <mnlen || field> mxlen.length)
 { 
 console.log("We suggest that you keep your subject between " +mnlen+ " and " +mxlen+ " characters");
 }
