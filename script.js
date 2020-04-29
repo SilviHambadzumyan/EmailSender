@@ -17,3 +17,4 @@ return true;
 function sendfunction() {
   alert("Your email has been sent");
 }
+
